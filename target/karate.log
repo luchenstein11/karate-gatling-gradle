@@ -1,0 +1,1072 @@
+18:00:57.054 [main] WARN  c.l.a.i.c.util.TransportTypeProvider - Inconsistent Netty versions detected: {netty-buffer=netty-buffer-4.1.110.Final.2e218bbd0a, netty-codec=netty-codec-4.1.110.Final.2e218bbd0a, netty-codec-dns=netty-codec-dns-4.1.110.Final.2e218bbd0a, netty-codec-haproxy=netty-codec-haproxy-4.1.110.Final.2e218bb (repository: dirty), netty-codec-http=netty-codec-http-4.1.110.Final.2e218bbd0a, netty-codec-http2=netty-codec-http2-4.1.110.Final.2e218bb (repository: dirty), netty-codec-mqtt=netty-codec-mqtt-4.1.92.Final.acc3525 (repository: dirty), netty-codec-socks=netty-codec-socks-4.1.110.Final.2e218bb (repository: dirty), netty-common=netty-common-4.1.110.Final.2e218bbd0a, netty-handler=netty-handler-4.1.110.Final.2e218bbd0a, netty-handler-proxy=netty-handler-proxy-4.1.110.Final.2e218bb (repository: dirty), netty-resolver=netty-resolver-4.1.110.Final.2e218bbd0a, netty-resolver-dns=netty-resolver-dns-4.1.110.Final.2e218bbd0a, netty-resolver-dns-classes-macos=netty-resolver-dns-classes-macos-4.1.110.Final.2e218bbd0a, netty-resolver-dns-native-macos=netty-resolver-dns-native-macos-4.1.110.Final.2e218bbd0a, netty-transport=netty-transport-4.1.110.Final.2e218bbd0a, netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-epoll=netty-transport-native-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-native-kqueue=netty-transport-native-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.110.Final.2e218bbd0a} This means 1) you specified Netty versions inconsistently in your build or 2) the Netty JARs in the classpath were repackaged or shaded incorrectly. Specify the '-Dcom.linecorp.armeria.warnNettyVersions=false' JVM option to disable this warning at the risk of unexpected Netty behavior, if you think it is a false positive.
+18:00:58.266 [main] INFO  com.intuit.karate - mock server initialized: classpath:mock/mock.feature
+18:00:58.640 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:00:59.110 [GatlingSystem-akka.actor.default-dispatcher-27] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:00:59.164 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:00:59.224 [GatlingSystem-akka.actor.default-dispatcher-33] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:00:59.599 [GatlingSystem-akka.actor.default-dispatcher-53] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:00:59.662 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:00.111 [GatlingSystem-akka.actor.default-dispatcher-67] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:00.170 [GatlingSystem-akka.actor.default-dispatcher-70] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:00.610 [GatlingSystem-akka.actor.default-dispatcher-83] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:00.667 [GatlingSystem-akka.actor.default-dispatcher-86] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:01.095 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:01.146 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:01.587 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:01.636 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:02.101 [GatlingSystem-akka.actor.default-dispatcher-28] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:02.148 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:02.589 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:02.639 [GatlingSystem-akka.actor.default-dispatcher-46] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:03.089 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:03.110 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:07.422 [main] WARN  c.l.a.i.c.util.TransportTypeProvider - Inconsistent Netty versions detected: {netty-buffer=netty-buffer-4.1.110.Final.2e218bbd0a, netty-codec=netty-codec-4.1.110.Final.2e218bbd0a, netty-codec-dns=netty-codec-dns-4.1.110.Final.2e218bbd0a, netty-codec-haproxy=netty-codec-haproxy-4.1.110.Final.2e218bb (repository: dirty), netty-codec-http=netty-codec-http-4.1.110.Final.2e218bbd0a, netty-codec-http2=netty-codec-http2-4.1.110.Final.2e218bb (repository: dirty), netty-codec-mqtt=netty-codec-mqtt-4.1.92.Final.acc3525 (repository: dirty), netty-codec-socks=netty-codec-socks-4.1.110.Final.2e218bb (repository: dirty), netty-common=netty-common-4.1.110.Final.2e218bbd0a, netty-handler=netty-handler-4.1.110.Final.2e218bbd0a, netty-handler-proxy=netty-handler-proxy-4.1.110.Final.2e218bb (repository: dirty), netty-resolver=netty-resolver-4.1.110.Final.2e218bbd0a, netty-resolver-dns=netty-resolver-dns-4.1.110.Final.2e218bbd0a, netty-resolver-dns-classes-macos=netty-resolver-dns-classes-macos-4.1.110.Final.2e218bbd0a, netty-resolver-dns-native-macos=netty-resolver-dns-native-macos-4.1.110.Final.2e218bbd0a, netty-transport=netty-transport-4.1.110.Final.2e218bbd0a, netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-epoll=netty-transport-native-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-native-kqueue=netty-transport-native-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.110.Final.2e218bbd0a} This means 1) you specified Netty versions inconsistently in your build or 2) the Netty JARs in the classpath were repackaged or shaded incorrectly. Specify the '-Dcom.linecorp.armeria.warnNettyVersions=false' JVM option to disable this warning at the risk of unexpected Netty behavior, if you think it is a false positive.
+18:01:08.670 [main] INFO  com.intuit.karate - mock server initialized: classpath:mock/mock.feature
+18:01:09.046 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:09.463 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:09.514 [GatlingSystem-akka.actor.default-dispatcher-28] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:09.603 [GatlingSystem-akka.actor.default-dispatcher-38] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:10.020 [GatlingSystem-akka.actor.default-dispatcher-51] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:10.069 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:10.518 [GatlingSystem-akka.actor.default-dispatcher-65] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:10.564 [GatlingSystem-akka.actor.default-dispatcher-68] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:11.020 [GatlingSystem-akka.actor.default-dispatcher-81] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:11.060 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:11.520 [GatlingSystem-akka.actor.default-dispatcher-95] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:11.580 [GatlingSystem-akka.actor.default-dispatcher-98] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:12.015 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:12.051 [GatlingSystem-akka.actor.default-dispatcher-14] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:12.517 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:12.549 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:13.019 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:13.082 [GatlingSystem-akka.actor.default-dispatcher-44] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:13.511 [GatlingSystem-akka.actor.default-dispatcher-55] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 7: @name=create
+18:01:13.533 [GatlingSystem-akka.actor.default-dispatcher-58] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-chained.feature - call by tag at line 16: @name=read
+18:01:18.084 [main] WARN  c.l.a.i.c.util.TransportTypeProvider - Inconsistent Netty versions detected: {netty-buffer=netty-buffer-4.1.110.Final.2e218bbd0a, netty-codec=netty-codec-4.1.110.Final.2e218bbd0a, netty-codec-dns=netty-codec-dns-4.1.110.Final.2e218bbd0a, netty-codec-haproxy=netty-codec-haproxy-4.1.110.Final.2e218bb (repository: dirty), netty-codec-http=netty-codec-http-4.1.110.Final.2e218bbd0a, netty-codec-http2=netty-codec-http2-4.1.110.Final.2e218bb (repository: dirty), netty-codec-mqtt=netty-codec-mqtt-4.1.92.Final.acc3525 (repository: dirty), netty-codec-socks=netty-codec-socks-4.1.110.Final.2e218bb (repository: dirty), netty-common=netty-common-4.1.110.Final.2e218bbd0a, netty-handler=netty-handler-4.1.110.Final.2e218bbd0a, netty-handler-proxy=netty-handler-proxy-4.1.110.Final.2e218bb (repository: dirty), netty-resolver=netty-resolver-4.1.110.Final.2e218bbd0a, netty-resolver-dns=netty-resolver-dns-4.1.110.Final.2e218bbd0a, netty-resolver-dns-classes-macos=netty-resolver-dns-classes-macos-4.1.110.Final.2e218bbd0a, netty-resolver-dns-native-macos=netty-resolver-dns-native-macos-4.1.110.Final.2e218bbd0a, netty-transport=netty-transport-4.1.110.Final.2e218bbd0a, netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-epoll=netty-transport-native-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-native-kqueue=netty-transport-native-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.110.Final.2e218bbd0a} This means 1) you specified Netty versions inconsistently in your build or 2) the Netty JARs in the classpath were repackaged or shaded incorrectly. Specify the '-Dcom.linecorp.armeria.warnNettyVersions=false' JVM option to disable this warning at the risk of unexpected Netty behavior, if you think it is a false positive.
+18:01:19.535 [main] INFO  com.intuit.karate - mock server initialized: classpath:mock/mock.feature
+18:01:19.841 [gatling-1-9] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:19.841 [gatling-1-1] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:19.843 [gatling-1-6] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:19.890 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:20.005 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - *** perf config init 
+18:01:20.005 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - *** perf config init 
+18:01:20.005 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - *** perf config init 
+18:01:20.011 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - [print] gatling userId: 1 
+18:01:20.110 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - *** perf config init 
+18:01:20.191 [GatlingSystem-akka.actor.default-dispatcher-24] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:20.200 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - *** perf config init 
+18:01:20.327 [gatling-1-2] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:20.327 [gatling-1-10] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:20.413 [GatlingSystem-akka.actor.default-dispatcher-44] INFO  com.intuit.karate - *** perf config init 
+18:01:20.418 [GatlingSystem-akka.actor.default-dispatcher-43] INFO  com.intuit.karate - *** perf config init 
+18:01:20.420 [GatlingSystem-akka.actor.default-dispatcher-43] INFO  com.intuit.karate - [print] gatling userId: 2 
+18:01:20.466 [GatlingSystem-akka.actor.default-dispatcher-18] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"be50fa84-fbcf-4bdd-9d3d-729ac3b600d6"}
+  {"name":"Billi","id":"be50fa84-fbcf-4bdd-9d3d-729ac3b600d6"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:20.489 [GatlingSystem-akka.actor.default-dispatcher-44] INFO  com.intuit.karate - *** perf config init 
+18:01:20.533 [GatlingSystem-akka.actor.default-dispatcher-43] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"785e83d2-2144-48fa-a5fe-0d8f4056613c"}
+  {"name":"Billi","id":"785e83d2-2144-48fa-a5fe-0d8f4056613c"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:20.570 [GatlingSystem-akka.actor.default-dispatcher-44] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:20.575 [GatlingSystem-akka.actor.default-dispatcher-44] INFO  com.intuit.karate - *** perf config init 
+18:01:20.827 [gatling-1-7] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:20.827 [gatling-1-3] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:20.827 [gatling-1-11] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:20.833 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:20.860 [GatlingSystem-akka.actor.default-dispatcher-77] INFO  com.intuit.karate - *** perf config init 
+18:01:20.860 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  com.intuit.karate - *** perf config init 
+18:01:20.860 [GatlingSystem-akka.actor.default-dispatcher-75] INFO  com.intuit.karate - *** perf config init 
+18:01:20.862 [GatlingSystem-akka.actor.default-dispatcher-77] INFO  com.intuit.karate - [print] gatling userId: 3 
+18:01:20.930 [GatlingSystem-akka.actor.default-dispatcher-75] INFO  com.intuit.karate - *** perf config init 
+18:01:20.988 [GatlingSystem-akka.actor.default-dispatcher-77] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"43b59be0-c951-45da-bbd7-2ba90e0a2251"}
+  {"name":"Billi","id":"43b59be0-c951-45da-bbd7-2ba90e0a2251"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:21.009 [GatlingSystem-akka.actor.default-dispatcher-75] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:21.016 [GatlingSystem-akka.actor.default-dispatcher-75] INFO  com.intuit.karate - *** perf config init 
+18:01:21.324 [gatling-1-12] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:21.324 [gatling-1-4] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:21.366 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - *** perf config init 
+18:01:21.366 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  com.intuit.karate - *** perf config init 
+18:01:21.369 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  com.intuit.karate - [print] gatling userId: 4 
+18:01:21.445 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - *** perf config init 
+18:01:21.491 [GatlingSystem-akka.actor.default-dispatcher-100] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"906988c1-dc1f-4c13-a47c-40ce76587072"}
+  {"name":"Billi","id":"906988c1-dc1f-4c13-a47c-40ce76587072"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:21.523 [GatlingSystem-akka.actor.default-dispatcher-99] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:21.530 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - *** perf config init 
+18:01:21.820 [gatling-1-13] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:21.835 [gatling-1-8] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:21.835 [gatling-1-5] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:21.861 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:21.882 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - *** perf config init 
+18:01:21.891 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  com.intuit.karate - *** perf config init 
+18:01:21.891 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - *** perf config init 
+18:01:21.898 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - [print] gatling userId: 5 
+18:01:21.951 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - *** perf config init 
+18:01:21.995 [GatlingSystem-akka.actor.default-dispatcher-32] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"8b22e141-5d82-41ea-bda7-ebf518808b7e"}
+  {"name":"Billi","id":"8b22e141-5d82-41ea-bda7-ebf518808b7e"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:22.002 [armeria-common-worker-nio-5-16] WARN  com.intuit.karate - remove failed: null
+18:01:22.029 [GatlingSystem-akka.actor.default-dispatcher-23] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:22.035 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - *** perf config init 
+18:01:22.323 [gatling-1-1] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:22.323 [gatling-1-14] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:22.359 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  com.intuit.karate - *** perf config init 
+18:01:22.359 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - *** perf config init 
+18:01:22.363 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  com.intuit.karate - [print] gatling userId: 14 
+18:01:22.419 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - *** perf config init 
+18:01:22.421 [GatlingSystem-akka.actor.default-dispatcher-56] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"a0398e4d-49da-4d12-b03c-7ee67f445b29"}
+  {"name":"Billi","id":"a0398e4d-49da-4d12-b03c-7ee67f445b29"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:22.497 [GatlingSystem-akka.actor.default-dispatcher-54] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:22.500 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - *** perf config init 
+18:01:22.825 [gatling-1-15] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:22.825 [gatling-1-16] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:22.825 [gatling-1-2] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:22.834 [GatlingSystem-akka.actor.default-dispatcher-83] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:22.853 [GatlingSystem-akka.actor.default-dispatcher-82] INFO  com.intuit.karate - *** perf config init 
+18:01:22.853 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - *** perf config init 
+18:01:22.855 [GatlingSystem-akka.actor.default-dispatcher-82] INFO  com.intuit.karate - [print] gatling userId: 15 
+18:01:22.855 [GatlingSystem-akka.actor.default-dispatcher-83] INFO  com.intuit.karate - *** perf config init 
+18:01:22.916 [GatlingSystem-akka.actor.default-dispatcher-82] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"978cc6ff-20f1-4c1b-922d-c684b5184d47"}
+  {"name":"Billi","id":"978cc6ff-20f1-4c1b-922d-c684b5184d47"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:22.923 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - *** perf config init 
+18:01:23.001 [GatlingSystem-akka.actor.default-dispatcher-79] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:23.014 [GatlingSystem-akka.actor.default-dispatcher-79] INFO  com.intuit.karate - *** perf config init 
+18:01:23.323 [gatling-1-6] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:23.323 [gatling-1-3] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:23.352 [GatlingSystem-akka.actor.default-dispatcher-19] INFO  com.intuit.karate - *** perf config init 
+18:01:23.352 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - *** perf config init 
+18:01:23.356 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - [print] gatling userId: 19 
+18:01:23.407 [GatlingSystem-akka.actor.default-dispatcher-17] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"34e56644-585e-4c90-9502-b49aa7294aef"}
+  {"name":"Billi","id":"34e56644-585e-4c90-9502-b49aa7294aef"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:23.418 [GatlingSystem-akka.actor.default-dispatcher-19] INFO  com.intuit.karate - *** perf config init 
+18:01:23.496 [GatlingSystem-akka.actor.default-dispatcher-19] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:23.504 [GatlingSystem-akka.actor.default-dispatcher-19] INFO  com.intuit.karate - *** perf config init 
+18:01:23.795 [armeria-common-worker-nio-5-15] WARN  com.intuit.karate - remove failed: null
+18:01:23.823 [gatling-1-5] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:23.823 [gatling-1-7] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:23.823 [gatling-1-4] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:23.831 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:23.860 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - *** perf config init 
+18:01:23.883 [GatlingSystem-akka.actor.default-dispatcher-52] INFO  com.intuit.karate - *** perf config init 
+18:01:23.887 [GatlingSystem-akka.actor.default-dispatcher-58] INFO  com.intuit.karate - *** perf config init 
+18:01:23.887 [GatlingSystem-akka.actor.default-dispatcher-52] INFO  com.intuit.karate - [print] gatling userId: 20 
+18:01:23.956 [GatlingSystem-akka.actor.default-dispatcher-58] INFO  com.intuit.karate - *** perf config init 
+18:01:23.962 [GatlingSystem-akka.actor.default-dispatcher-52] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"32218a4a-8490-4678-9598-efda9118a0fa"}
+  {"name":"Billi","id":"32218a4a-8490-4678-9598-efda9118a0fa"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:24.038 [GatlingSystem-akka.actor.default-dispatcher-58] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:24.041 [GatlingSystem-akka.actor.default-dispatcher-58] INFO  com.intuit.karate - *** perf config init 
+18:01:24.333 [gatling-1-9] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:24.333 [gatling-1-8] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:24.344 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - *** perf config init 
+18:01:24.344 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - *** perf config init 
+18:01:24.345 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - [print] gatling userId: 24 
+18:01:24.401 [GatlingSystem-akka.actor.default-dispatcher-84] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"c6b20564-8e41-4c67-a8b2-4afb2d943e89"}
+  {"name":"Billi","id":"c6b20564-8e41-4c67-a8b2-4afb2d943e89"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:24.451 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - *** perf config init 
+18:01:24.531 [GatlingSystem-akka.actor.default-dispatcher-78] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:24.539 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - *** perf config init 
+18:01:24.678 [armeria-common-worker-nio-5-9] WARN  com.intuit.karate - remove failed: null
+18:01:30.912 [main] WARN  c.l.a.i.c.util.TransportTypeProvider - Inconsistent Netty versions detected: {netty-buffer=netty-buffer-4.1.110.Final.2e218bbd0a, netty-codec=netty-codec-4.1.110.Final.2e218bbd0a, netty-codec-dns=netty-codec-dns-4.1.110.Final.2e218bbd0a, netty-codec-haproxy=netty-codec-haproxy-4.1.110.Final.2e218bb (repository: dirty), netty-codec-http=netty-codec-http-4.1.110.Final.2e218bbd0a, netty-codec-http2=netty-codec-http2-4.1.110.Final.2e218bb (repository: dirty), netty-codec-mqtt=netty-codec-mqtt-4.1.92.Final.acc3525 (repository: dirty), netty-codec-socks=netty-codec-socks-4.1.110.Final.2e218bb (repository: dirty), netty-common=netty-common-4.1.110.Final.2e218bbd0a, netty-handler=netty-handler-4.1.110.Final.2e218bbd0a, netty-handler-proxy=netty-handler-proxy-4.1.110.Final.2e218bb (repository: dirty), netty-resolver=netty-resolver-4.1.110.Final.2e218bbd0a, netty-resolver-dns=netty-resolver-dns-4.1.110.Final.2e218bbd0a, netty-resolver-dns-classes-macos=netty-resolver-dns-classes-macos-4.1.110.Final.2e218bbd0a, netty-resolver-dns-native-macos=netty-resolver-dns-native-macos-4.1.110.Final.2e218bbd0a, netty-transport=netty-transport-4.1.110.Final.2e218bbd0a, netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-epoll=netty-transport-native-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-native-kqueue=netty-transport-native-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.110.Final.2e218bbd0a} This means 1) you specified Netty versions inconsistently in your build or 2) the Netty JARs in the classpath were repackaged or shaded incorrectly. Specify the '-Dcom.linecorp.armeria.warnNettyVersions=false' JVM option to disable this warning at the risk of unexpected Netty behavior, if you think it is a false positive.
+18:01:32.500 [main] INFO  com.intuit.karate - mock server initialized: classpath:mock/mock.feature
+18:01:32.981 [gatling-1-1] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:32.982 [gatling-1-9] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:32.986 [gatling-1-6] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:33.050 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:33.197 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - *** perf config init 
+18:01:33.197 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - *** perf config init 
+18:01:33.197 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - *** perf config init 
+18:01:33.204 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - [print] gatling userId: 1 
+18:01:33.416 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - *** perf config init 
+18:01:33.461 [gatling-1-10] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:33.470 [gatling-1-2] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:33.525 [GatlingSystem-akka.actor.default-dispatcher-21] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:33.548 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - *** perf config init 
+18:01:33.667 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:33.667 [GatlingSystem-akka.actor.default-dispatcher-34] INFO  com.intuit.karate - *** perf config init 
+18:01:33.671 [GatlingSystem-akka.actor.default-dispatcher-34] INFO  com.intuit.karate - [print] gatling userId: 2 
+18:01:33.733 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:33.813 [GatlingSystem-akka.actor.default-dispatcher-31] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:33.834 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:33.976 [gatling-1-3] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:33.973 [gatling-1-11] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:33.977 [gatling-1-7] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:34.046 [GatlingSystem-akka.actor.default-dispatcher-55] INFO  com.intuit.karate - *** perf config init 
+18:01:34.050 [GatlingSystem-akka.actor.default-dispatcher-55] INFO  com.intuit.karate - [print] gatling userId: 3 
+18:01:34.067 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - *** perf config init 
+18:01:34.080 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:34.119 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  com.intuit.karate - *** perf config init 
+18:01:34.143 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - *** perf config init 
+18:01:34.261 [GatlingSystem-akka.actor.default-dispatcher-60] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:34.289 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - *** perf config init 
+18:01:34.336 [GatlingSystem-akka.actor.default-dispatcher-55] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"82a82328-589f-490b-9c9d-d2b9094fd0c2"}
+  {"name":"Billi","id":"82a82328-589f-490b-9c9d-d2b9094fd0c2"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:34.383 [GatlingSystem-akka.actor.default-dispatcher-18] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"6cd8b067-520e-48c5-a0ff-02eb754c3948"}
+  {"name":"Billi","id":"6cd8b067-520e-48c5-a0ff-02eb754c3948"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:34.466 [gatling-1-12] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:34.472 [GatlingSystem-akka.actor.default-dispatcher-34] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"6b22bc84-0684-434a-98ec-3d99f74e980f"}
+  {"name":"Billi","id":"6b22bc84-0684-434a-98ec-3d99f74e980f"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:34.479 [gatling-1-4] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:34.526 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - *** perf config init 
+18:01:34.547 [GatlingSystem-akka.actor.default-dispatcher-102] INFO  com.intuit.karate - *** perf config init 
+18:01:34.555 [GatlingSystem-akka.actor.default-dispatcher-102] INFO  com.intuit.karate - [print] gatling userId: 4 
+18:01:34.591 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - *** perf config init 
+18:01:34.664 [GatlingSystem-akka.actor.default-dispatcher-102] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"65ee158d-c568-472e-b540-9b3f279ee84b"}
+  {"name":"Billi","id":"65ee158d-c568-472e-b540-9b3f279ee84b"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:34.671 [GatlingSystem-akka.actor.default-dispatcher-99] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:34.680 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - *** perf config init 
+18:01:34.966 [gatling-1-13] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:34.966 [gatling-1-5] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:34.966 [gatling-1-8] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:34.970 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:34.983 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - *** perf config init 
+18:01:34.983 [GatlingSystem-akka.actor.default-dispatcher-26] INFO  com.intuit.karate - *** perf config init 
+18:01:34.983 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  com.intuit.karate - *** perf config init 
+18:01:34.986 [GatlingSystem-akka.actor.default-dispatcher-26] INFO  com.intuit.karate - [print] gatling userId: 5 
+18:01:35.061 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - *** perf config init 
+18:01:35.141 [GatlingSystem-akka.actor.default-dispatcher-22] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:35.148 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - *** perf config init 
+18:01:35.161 [GatlingSystem-akka.actor.default-dispatcher-26] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"9a247027-1964-4220-82d2-00a5fe473280"}
+  {"name":"Billi","id":"9a247027-1964-4220-82d2-00a5fe473280"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:35.456 [armeria-common-worker-nio-5-1] WARN  com.intuit.karate - remove failed: null
+18:01:35.462 [gatling-1-14] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:35.462 [gatling-1-1] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:35.513 [GatlingSystem-akka.actor.default-dispatcher-57] INFO  com.intuit.karate - *** perf config init 
+18:01:35.521 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  com.intuit.karate - *** perf config init 
+18:01:35.524 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  com.intuit.karate - [print] gatling userId: 14 
+18:01:35.578 [GatlingSystem-akka.actor.default-dispatcher-57] INFO  com.intuit.karate - *** perf config init 
+18:01:35.585 [GatlingSystem-akka.actor.default-dispatcher-56] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"4eaf2584-a102-47fe-bdf5-2f6840327b53"}
+  {"name":"Billi","id":"4eaf2584-a102-47fe-bdf5-2f6840327b53"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:35.657 [GatlingSystem-akka.actor.default-dispatcher-57] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:35.662 [GatlingSystem-akka.actor.default-dispatcher-57] INFO  com.intuit.karate - *** perf config init 
+18:01:35.975 [gatling-1-2] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:35.975 [gatling-1-16] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:35.975 [gatling-1-15] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:35.985 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:36.034 [GatlingSystem-akka.actor.default-dispatcher-83] INFO  com.intuit.karate - *** perf config init 
+18:01:36.034 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - *** perf config init 
+18:01:36.035 [GatlingSystem-akka.actor.default-dispatcher-81] INFO  com.intuit.karate - *** perf config init 
+18:01:36.037 [GatlingSystem-akka.actor.default-dispatcher-83] INFO  com.intuit.karate - [print] gatling userId: 15 
+18:01:36.099 [GatlingSystem-akka.actor.default-dispatcher-83] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"5ca8ec6c-dd0a-42b8-b691-3291c6010137"}
+  {"name":"Billi","id":"5ca8ec6c-dd0a-42b8-b691-3291c6010137"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:36.103 [GatlingSystem-akka.actor.default-dispatcher-81] INFO  com.intuit.karate - *** perf config init 
+18:01:36.180 [GatlingSystem-akka.actor.default-dispatcher-81] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:36.183 [GatlingSystem-akka.actor.default-dispatcher-81] INFO  com.intuit.karate - *** perf config init 
+18:01:36.368 [armeria-common-worker-nio-5-11] WARN  com.intuit.karate - remove failed: null
+18:01:36.461 [gatling-1-3] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:36.461 [gatling-1-6] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:36.499 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  com.intuit.karate - *** perf config init 
+18:01:36.499 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  com.intuit.karate - *** perf config init 
+18:01:36.505 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  com.intuit.karate - [print] gatling userId: 19 
+18:01:36.561 [GatlingSystem-akka.actor.default-dispatcher-12] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"07b1f4ad-da17-4855-a659-a7a0627adbb1"}
+  {"name":"Billi","id":"07b1f4ad-da17-4855-a659-a7a0627adbb1"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:36.575 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  com.intuit.karate - *** perf config init 
+18:01:36.652 [GatlingSystem-akka.actor.default-dispatcher-16] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:36.656 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  com.intuit.karate - *** perf config init 
+18:01:36.931 [armeria-common-worker-nio-5-15] WARN  com.intuit.karate - remove failed: null
+18:01:36.961 [gatling-1-4] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:36.961 [gatling-1-7] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:36.961 [gatling-1-5] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:36.965 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:36.967 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - *** perf config init 
+18:01:36.967 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:36.969 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - [print] gatling userId: 20 
+18:01:36.976 [GatlingSystem-akka.actor.default-dispatcher-47] INFO  com.intuit.karate - *** perf config init 
+18:01:37.024 [GatlingSystem-akka.actor.default-dispatcher-22] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"21c72096-df9c-4752-b6b7-60b8bf21a972"}
+  {"name":"Billi","id":"21c72096-df9c-4752-b6b7-60b8bf21a972"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:37.049 [GatlingSystem-akka.actor.default-dispatcher-47] INFO  com.intuit.karate - *** perf config init 
+18:01:37.131 [GatlingSystem-akka.actor.default-dispatcher-47] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:37.137 [GatlingSystem-akka.actor.default-dispatcher-47] INFO  com.intuit.karate - *** perf config init 
+18:01:37.461 [gatling-1-8] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:37.461 [gatling-1-9] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:37.488 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - *** perf config init 
+18:01:37.488 [GatlingSystem-akka.actor.default-dispatcher-88] INFO  com.intuit.karate - *** perf config init 
+18:01:37.489 [GatlingSystem-akka.actor.default-dispatcher-88] INFO  com.intuit.karate - [print] gatling userId: 24 
+18:01:37.556 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - *** perf config init 
+18:01:37.566 [GatlingSystem-akka.actor.default-dispatcher-88] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"f32d827c-306a-44af-8163-c23886313ee6"}
+  {"name":"Billi","id":"f32d827c-306a-44af-8163-c23886313ee6"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:37.635 [GatlingSystem-akka.actor.default-dispatcher-80] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:37.638 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - *** perf config init 
+18:01:37.843 [armeria-common-worker-nio-5-11] WARN  com.intuit.karate - remove failed: null
+18:01:43.865 [main] WARN  c.l.a.i.c.util.TransportTypeProvider - Inconsistent Netty versions detected: {netty-buffer=netty-buffer-4.1.110.Final.2e218bbd0a, netty-codec=netty-codec-4.1.110.Final.2e218bbd0a, netty-codec-dns=netty-codec-dns-4.1.110.Final.2e218bbd0a, netty-codec-haproxy=netty-codec-haproxy-4.1.110.Final.2e218bb (repository: dirty), netty-codec-http=netty-codec-http-4.1.110.Final.2e218bbd0a, netty-codec-http2=netty-codec-http2-4.1.110.Final.2e218bb (repository: dirty), netty-codec-mqtt=netty-codec-mqtt-4.1.92.Final.acc3525 (repository: dirty), netty-codec-socks=netty-codec-socks-4.1.110.Final.2e218bb (repository: dirty), netty-common=netty-common-4.1.110.Final.2e218bbd0a, netty-handler=netty-handler-4.1.110.Final.2e218bbd0a, netty-handler-proxy=netty-handler-proxy-4.1.110.Final.2e218bb (repository: dirty), netty-resolver=netty-resolver-4.1.110.Final.2e218bbd0a, netty-resolver-dns=netty-resolver-dns-4.1.110.Final.2e218bbd0a, netty-resolver-dns-classes-macos=netty-resolver-dns-classes-macos-4.1.110.Final.2e218bbd0a, netty-resolver-dns-native-macos=netty-resolver-dns-native-macos-4.1.110.Final.2e218bbd0a, netty-transport=netty-transport-4.1.110.Final.2e218bbd0a, netty-transport-classes-epoll=netty-transport-classes-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-classes-kqueue=netty-transport-classes-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-epoll=netty-transport-native-epoll-4.1.110.Final.2e218bb (repository: dirty), netty-transport-native-kqueue=netty-transport-native-kqueue-4.1.110.Final.2e218bbd0a, netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.110.Final.2e218bbd0a} This means 1) you specified Netty versions inconsistently in your build or 2) the Netty JARs in the classpath were repackaged or shaded incorrectly. Specify the '-Dcom.linecorp.armeria.warnNettyVersions=false' JVM option to disable this warning at the risk of unexpected Netty behavior, if you think it is a false positive.
+18:01:45.149 [main] INFO  com.intuit.karate - mock server initialized: classpath:mock/mock.feature
+18:01:45.427 [gatling-1-2] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:45.427 [gatling-1-1] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:45.427 [gatling-1-3] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:45.594 [GatlingSystem-akka.actor.default-dispatcher-20] INFO  com.intuit.karate - *** perf config init 
+18:01:45.594 [GatlingSystem-akka.actor.default-dispatcher-26] INFO  com.intuit.karate - *** perf config init 
+18:01:45.594 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - *** perf config init 
+18:01:45.600 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - [print] this should not appear in the logs ! 
+18:01:45.600 [GatlingSystem-akka.actor.default-dispatcher-26] INFO  com.intuit.karate - [print] gatling userId: 1 
+18:01:45.696 [GatlingSystem-akka.actor.default-dispatcher-20] INFO  com.intuit.karate - *** perf config init 
+18:01:45.779 [GatlingSystem-akka.actor.default-dispatcher-20] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:45.796 [GatlingSystem-akka.actor.default-dispatcher-20] INFO  com.intuit.karate - *** perf config init 
+18:01:45.988 [GatlingSystem-akka.actor.default-dispatcher-23] ERROR com.intuit.karate - classpath:mock/cats-delete.feature:9
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 258, url: http://localhost:51420/cats, response: 
+[]
+classpath:mock/cats-delete.feature:9
+18:01:45.994 [GatlingSystem-akka.actor.default-dispatcher-23] INFO  com.intuit.karate - *** perf config init 
+18:01:46.089 [GatlingSystem-akka.actor.default-dispatcher-26] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"a4bc0f28-af90-48ea-aa29-c9253a6453e5"}
+  {"name":"Billi","id":"a4bc0f28-af90-48ea-aa29-c9253a6453e5"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:46.428 [gatling-1-4] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:46.429 [gatling-1-7] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:46.498 [GatlingSystem-akka.actor.default-dispatcher-38] INFO  com.intuit.karate - *** perf config init 
+18:01:46.497 [GatlingSystem-akka.actor.default-dispatcher-37] INFO  com.intuit.karate - *** perf config init 
+18:01:46.501 [GatlingSystem-akka.actor.default-dispatcher-38] INFO  com.intuit.karate - [print] gatling userId: 7 
+18:01:46.572 [GatlingSystem-akka.actor.default-dispatcher-37] INFO  com.intuit.karate - *** perf config init 
+18:01:46.594 [GatlingSystem-akka.actor.default-dispatcher-38] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"8585e237-7b46-4ce7-88ad-81b759b6b995"}
+  {"name":"Billi","id":"8585e237-7b46-4ce7-88ad-81b759b6b995"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:46.650 [GatlingSystem-akka.actor.default-dispatcher-37] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:46.654 [GatlingSystem-akka.actor.default-dispatcher-37] INFO  com.intuit.karate - *** perf config init 
+18:01:46.939 [gatling-1-5] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:46.939 [gatling-1-8] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:46.955 [GatlingSystem-akka.actor.default-dispatcher-59] INFO  com.intuit.karate - *** perf config init 
+18:01:46.955 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - *** perf config init 
+18:01:46.959 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - [print] gatling userId: 8 
+18:01:47.021 [GatlingSystem-akka.actor.default-dispatcher-59] INFO  com.intuit.karate - *** perf config init 
+18:01:47.054 [GatlingSystem-akka.actor.default-dispatcher-60] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"52107ed2-7b31-4fec-b1ed-d9bd9cedd7c5"}
+  {"name":"Billi","id":"52107ed2-7b31-4fec-b1ed-d9bd9cedd7c5"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:47.098 [GatlingSystem-akka.actor.default-dispatcher-59] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:47.101 [GatlingSystem-akka.actor.default-dispatcher-59] INFO  com.intuit.karate - *** perf config init 
+18:01:47.425 [gatling-1-12] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:47.428 [GatlingSystem-akka.actor.default-dispatcher-86] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:47.436 [gatling-1-6] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:47.436 [gatling-1-9] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:47.441 [GatlingSystem-akka.actor.default-dispatcher-86] INFO  com.intuit.karate - *** perf config init 
+18:01:47.458 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - *** perf config init 
+18:01:47.458 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - *** perf config init 
+18:01:47.462 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - [print] gatling userId: 9 
+18:01:47.520 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - *** perf config init 
+18:01:47.550 [GatlingSystem-akka.actor.default-dispatcher-89] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"8831269c-494c-41b9-9535-ae24786a7e6c"}
+  {"name":"Billi","id":"8831269c-494c-41b9-9535-ae24786a7e6c"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:47.597 [GatlingSystem-akka.actor.default-dispatcher-90] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:47.600 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - *** perf config init 
+18:01:47.935 [gatling-1-11] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:47.935 [gatling-1-10] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:47.949 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - *** perf config init 
+18:01:47.949 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  com.intuit.karate - *** perf config init 
+18:01:47.950 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  com.intuit.karate - [print] gatling userId: 11 
+18:01:48.017 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - *** perf config init 
+18:01:48.018 [GatlingSystem-akka.actor.default-dispatcher-15] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"1282343d-3d44-4798-8df0-0e52ba89d9c3"}
+  {"name":"Billi","id":"1282343d-3d44-4798-8df0-0e52ba89d9c3"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:48.096 [GatlingSystem-akka.actor.default-dispatcher-11] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:48.102 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - *** perf config init 
+18:01:48.435 [gatling-1-13] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:48.436 [gatling-1-14] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:48.436 [gatling-1-1] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:48.439 [GatlingSystem-akka.actor.default-dispatcher-42] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:48.447 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - *** perf config init 
+18:01:48.447 [GatlingSystem-akka.actor.default-dispatcher-42] INFO  com.intuit.karate - *** perf config init 
+18:01:48.448 [GatlingSystem-akka.actor.default-dispatcher-46] INFO  com.intuit.karate - *** perf config init 
+18:01:48.450 [GatlingSystem-akka.actor.default-dispatcher-46] INFO  com.intuit.karate - [print] gatling userId: 17 
+18:01:48.504 [GatlingSystem-akka.actor.default-dispatcher-46] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"2b76fe5c-c6b0-4b8b-b1a9-9dfcecaf6f1b"}
+  {"name":"Billi","id":"2b76fe5c-c6b0-4b8b-b1a9-9dfcecaf6f1b"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:48.518 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - *** perf config init 
+18:01:48.598 [GatlingSystem-akka.actor.default-dispatcher-45] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:48.608 [GatlingSystem-akka.actor.default-dispatcher-45] INFO  com.intuit.karate - *** perf config init 
+18:01:48.934 [gatling-1-2] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:48.934 [gatling-1-15] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:48.947 [GatlingSystem-akka.actor.default-dispatcher-65] INFO  com.intuit.karate - *** perf config init 
+18:01:48.947 [GatlingSystem-akka.actor.default-dispatcher-67] INFO  com.intuit.karate - *** perf config init 
+18:01:48.949 [GatlingSystem-akka.actor.default-dispatcher-65] INFO  com.intuit.karate - [print] gatling userId: 18 
+18:01:48.999 [GatlingSystem-akka.actor.default-dispatcher-65] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"fdcccd37-79b3-49ee-9b0f-2d04e7b23053"}
+  {"name":"Billi","id":"fdcccd37-79b3-49ee-9b0f-2d04e7b23053"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:49.021 [GatlingSystem-akka.actor.default-dispatcher-67] INFO  com.intuit.karate - *** perf config init 
+18:01:49.101 [GatlingSystem-akka.actor.default-dispatcher-67] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:49.104 [GatlingSystem-akka.actor.default-dispatcher-67] INFO  com.intuit.karate - *** perf config init 
+18:01:49.433 [gatling-1-3] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:49.433 [gatling-1-16] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:49.433 [gatling-1-4] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:49.438 [GatlingSystem-akka.actor.default-dispatcher-104] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:49.441 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - *** perf config init 
+18:01:49.442 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - [print] gatling userId: 19 
+18:01:49.448 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - *** perf config init 
+18:01:49.448 [GatlingSystem-akka.actor.default-dispatcher-104] INFO  com.intuit.karate - *** perf config init 
+18:01:49.506 [GatlingSystem-akka.actor.default-dispatcher-90] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"e11f307e-e57e-4a5a-87d5-cbf5de88e6fe"}
+  {"name":"Billi","id":"e11f307e-e57e-4a5a-87d5-cbf5de88e6fe"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:49.520 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - *** perf config init 
+18:01:49.598 [GatlingSystem-akka.actor.default-dispatcher-7] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:49.604 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - *** perf config init 
+18:01:49.930 [gatling-1-6] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:49.930 [gatling-1-5] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:49.940 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:49.940 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - *** perf config init 
+18:01:49.956 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - [print] gatling userId: 22 
+18:01:50.013 [GatlingSystem-akka.actor.default-dispatcher-32] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"4855f000-8444-4b9f-bf80-5db35c10e28b"}
+  {"name":"Billi","id":"4855f000-8444-4b9f-bf80-5db35c10e28b"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:50.035 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:50.113 [GatlingSystem-akka.actor.default-dispatcher-31] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:50.118 [GatlingSystem-akka.actor.default-dispatcher-31] INFO  com.intuit.karate - *** perf config init 
+18:01:50.430 [gatling-1-11] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:50.430 [gatling-1-9] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:50.430 [gatling-1-7] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:50.438 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:50.451 [GatlingSystem-akka.actor.default-dispatcher-60] INFO  com.intuit.karate - *** perf config init 
+18:01:50.513 [GatlingSystem-akka.actor.default-dispatcher-77] INFO  com.intuit.karate - *** perf config init 
+18:01:50.523 [GatlingSystem-akka.actor.default-dispatcher-76] INFO  com.intuit.karate - *** perf config init 
+18:01:50.548 [GatlingSystem-akka.actor.default-dispatcher-77] INFO  com.intuit.karate - [print] gatling userId: 25 
+18:01:50.611 [GatlingSystem-akka.actor.default-dispatcher-76] INFO  com.intuit.karate - *** perf config init 
+18:01:50.653 [GatlingSystem-akka.actor.default-dispatcher-77] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"4507e3b3-7da5-441e-84fa-68a0f1d39bec"}
+  {"name":"Billi","id":"4507e3b3-7da5-441e-84fa-68a0f1d39bec"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:50.696 [GatlingSystem-akka.actor.default-dispatcher-76] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:50.712 [GatlingSystem-akka.actor.default-dispatcher-76] INFO  com.intuit.karate - *** perf config init 
+18:01:50.934 [gatling-1-8] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:50.934 [gatling-1-10] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:50.939 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - *** perf config init 
+18:01:50.950 [GatlingSystem-akka.actor.default-dispatcher-96] INFO  com.intuit.karate - *** perf config init 
+18:01:50.951 [GatlingSystem-akka.actor.default-dispatcher-96] INFO  com.intuit.karate - [print] gatling userId: 26 
+18:01:50.998 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - *** perf config init 
+18:01:50.998 [GatlingSystem-akka.actor.default-dispatcher-96] ERROR com.intuit.karate - classpath:mock/cats-create.feature:19
+And match response == { id: '#(id)', name: 'Billi' }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'name' (MAP:MAP)
+  {"name":"Billie","id":"c10f8b05-5f3a-4a38-9acb-3768e7f45235"}
+  {"name":"Billi","id":"c10f8b05-5f3a-4a38-9acb-3768e7f45235"}
+
+    $.name | not equal (STRING:STRING)
+    'Billie'
+    'Billi'
+
+classpath:mock/cats-create.feature:19
+18:01:51.076 [GatlingSystem-akka.actor.default-dispatcher-89] ERROR com.intuit.karate - classpath:mock/custom-rpc.feature:15
+* match response == { success: false }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'success' (MAP:MAP)
+  {"success":true}
+  {"success":false}
+
+    $.success | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:mock/custom-rpc.feature:15
+18:01:51.080 [GatlingSystem-akka.actor.default-dispatcher-89] INFO  com.intuit.karate - *** perf config init 
+18:01:51.428 [gatling-1-12] INFO  com.intuit.karate.Runner - karate.env is: 'perf'
+18:01:51.432 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  c.intuit.karate.core.FeatureRuntime - classpath:mock/cats-delete.feature - call by tag at line 12: @name=delete
+18:01:51.437 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  com.intuit.karate - *** perf config init 

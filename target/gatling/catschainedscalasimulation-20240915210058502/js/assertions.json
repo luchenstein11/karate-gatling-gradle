@@ -1,0 +1,18 @@
+{
+  "simulation": "mock.CatsChainedScalaSimulation",
+  "simulationId": "catschainedscalasimulation-20240915210058502",
+  "start": 1726434058595,
+  "description": "",
+  "scenarios": ["createAndRead"],
+  "assertions": [
+{
+  "path": "createAndRead",
+  "target": "percentage of failed events",
+  "condition": "is",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "createAndRead: percentage of failed events is 0.0",
+  "actualValue": [0.0]
+}
+  ]
+}

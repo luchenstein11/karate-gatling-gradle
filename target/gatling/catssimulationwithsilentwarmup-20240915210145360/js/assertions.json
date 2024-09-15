@@ -1,0 +1,10 @@
+{
+  "simulation": "mock.CatsSimulationWithSilentWarmUp",
+  "simulationId": "catssimulationwithsilentwarmup-20240915210145360",
+  "start": 1726434105477,
+  "description": "",
+  "scenarios": ["custom warm-up", "delete warm-up", "create warm-up", "custom", "create", "delete"],
+  "assertions": [
+
+  ]
+}

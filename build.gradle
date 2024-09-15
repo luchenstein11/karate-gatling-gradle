@@ -1,0 +1,41 @@
+
+plugins {
+    id 'java'
+    id 'scala'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Karate dependencies
+    implementation 'io.karatelabs:karate-core:1.5.0'
+    
+    // Gatling dependencies
+    implementation 'io.gatling.highcharts:gatling-charts-highcharts:3.9.5'
+    
+    // Scala and testing
+    testImplementation 'org.scala-lang:scala-library:2.13.8'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+
+    // Exclude Netty codec in Gatling dependencies
+    configurations {
+        all {
+            exclude group: 'io.netty', module: 'netty-codec'
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+gatling {
+    simulations = [
+        'mock.CatsChainedSimulation',
+        'mock.CatsSimulation'
+    ]
+}
+
